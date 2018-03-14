@@ -1,0 +1,32 @@
+{
+  "name": "dotenv-load",
+  "version": "1.0.0",
+  "description": "Load environment variables from .env, .env.local, .env.production, etc. when running a npm or yarn command",
+  "author": "Martin Rädlinger",
+  "license": "MIT",
+  "homepage": "https://github.com/formatlos/dotenv-load",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/formatlos/dotenv-load"
+  },
+  "keywords": [
+    "dotenv",
+    "yarn",
+    "npm run"
+  ],
+  "main": "index.js",
+  "bin": {
+    "dotenv-load": "cli.js"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.0",
+    "dotenv-expand": "^4.2.0",
+    "shelljs": "^0.8.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.11.1"
+  }
+}
