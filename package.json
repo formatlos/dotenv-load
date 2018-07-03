@@ -1,6 +1,6 @@
 {
   "name": "dotenv-load",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Load environment variables from .env, .env.local, .env.production, etc. when running a npm or yarn command",
   "author": "Martin Rädlinger",
   "license": "MIT",
