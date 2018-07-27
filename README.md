@@ -46,6 +46,6 @@ add `.local` files to `.gitignore`
 The first value set (or those already defined in the environment) take precedence:
 
 - `.env` - The Original®
-- `.env.development`, `.env.test`, `.env.production` - Environment-specific settings.
 - `.env.local` - Local overrides. This file is loaded for all environments _except_ `test`.
+- `.env.development`, `.env.test`, `.env.production` - Environment-specific settings.
 - `.env.development.local`, `.env.test.local`, `.env.production.local` - Local overrides of environment-specific settings.
