@@ -34,7 +34,7 @@ dotenvLoad();
 
 add `.local` files to `.gitignore`
 
-```
+```txt
 .env.local
 .env.development.local
 .env.production.local
@@ -49,3 +49,14 @@ The first value set (or those already defined in the environment) take precedenc
 - `.env.local` - Local overrides. This file is loaded for all environments _except_ `test`.
 - `.env.development`, `.env.test`, `.env.production` - Environment-specific settings.
 - `.env.development.local`, `.env.test.local`, `.env.production.local` - Local overrides of environment-specific settings.
+
+## How can I use custom env file?
+
+You can pass a string to `dotenvLoad` function, but your file should have a name like `.env.YOUR_CUSTOM_NAME`, for example: `.env.default`.
+
+Then you can initialize it as follows:
+
+```js
+dotenvLoad() # will initialize standard names
+dotenvLoad('default') # will initialize your `.env.default` (while not overwriting defined vars above)
+```
