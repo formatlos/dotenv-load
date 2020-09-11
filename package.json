@@ -22,11 +22,11 @@
     "node": ">=6"
   },
   "dependencies": {
-    "dotenv": "^5.0.0",
-    "dotenv-expand": "^4.2.0",
-    "shelljs": "^0.8.1"
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0",
+    "shelljs": "^0.8.4"
   },
   "devDependencies": {
-    "prettier": "^1.11.1"
+    "prettier": "^2.1.1"
   }
 }
