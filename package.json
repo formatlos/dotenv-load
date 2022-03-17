@@ -1,6 +1,6 @@
 {
   "name": "dotenv-load",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Load environment variables from .env, .env.local, .env.production, etc. when running a npm or yarn command",
   "author": "Martin Rädlinger",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "npm run"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "bin": {
     "dotenv-load": "cli.js"
   },
@@ -22,11 +23,11 @@
     "node": ">=6"
   },
   "dependencies": {
-    "dotenv": "^5.0.0",
-    "dotenv-expand": "^4.2.0",
-    "shelljs": "^0.8.1"
+    "dotenv": "^16.0.0",
+    "dotenv-expand": "^8.0.2",
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
-    "prettier": "^1.11.1"
+    "prettier": "^2.6.0"
   }
 }
