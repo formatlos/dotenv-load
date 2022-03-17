@@ -29,17 +29,18 @@ const dotenvFiles = [
 // https://github.com/motdotla/dotenv-expand
 module.exports = (preloadEnv) => {
   const files = [];
-  if(preloadEnv) {
+  if (preloadEnv) {
     files.push(`${dotenvPath}.${preloadEnv}`);
   }
-  return files.concat(dotenvFiles).forEach(dotenvFile => {
+  return files.concat(dotenvFiles).forEach((dotenvFile) => {
     if (fs.existsSync(dotenvFile)) {
-      require('dotenv-expand')(
-        require('dotenv').config({
+      const dotenv = require('dotenv');
+      const dotenvExpand = require('dotenv-expand');
+      dotenvExpand.expand(
+        dotenv.config({
           path: dotenvFile,
-        })
+        }),
       );
     }
-  })
-
+  });
 };
