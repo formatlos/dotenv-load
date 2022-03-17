@@ -15,6 +15,7 @@
     "npm run"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "bin": {
     "dotenv-load": "cli.js"
   },
